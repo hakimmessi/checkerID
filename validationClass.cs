@@ -38,7 +38,31 @@ namespace checkerID
         #endregion
 
         #region method to check if the user's input as a Passport number is in a valid format.
+        public bool isPassportNoValid(string passportNumber)
+        {
+            // check if the passport number has exactly 9 characters.
+            if (passportNumber.Length != 9)
+            {
+                return false; // return false as the passport number is invalid.
+            }
 
+            // check if the first character is a letter and the rest are digits.
+            if (!char.IsLetter(passportNumber[0]))
+            {
+                return false; // return false as the passport number is invalid.
+            }
+
+            // check if all characters from index 1 to end are digits.
+            for (int i = 1; i < passportNumber.Length; i++)
+            {
+                if (!char.IsDigit(passportNumber[i]))
+                {
+                    return false; // return false as the passport number is invalid.
+                }
+            }
+
+            return true; // return true if the passport number is valid.
+        }
         #endregion
 
     }
