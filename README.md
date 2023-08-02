@@ -3,6 +3,7 @@ C# console application to verify ID or passport numbers.
 checkerID Program
 
 * Overview
+
 The "checkerID" program is a simple hard coded program in .NET Framework 4.7.2 application developed using Visual Studio Community 2022 on Windows 10. This program allows users to validate and check the vaccination status of individuals based on their ID number or Passport number. It stores pre-defined data of vaccinated users in a dictionary with ID numbers or Passport numbers as keys and vaccination numbers as values. Users can enter their ID number or Passport number along with the corresponding vaccination number to check if they are vaccinated.
 
 * Features
