@@ -65,5 +65,19 @@ namespace checkerID
         }
         #endregion
 
+        #region method to check if the given vaccination number is in a valid format.
+        public bool isVaccinationNoValid(int vaccinationNo)
+        {
+            bool valid = false;
+
+            // check if the vaccination number has exactly 5 digits.
+            if (vaccinationNo == 5 && int.TryParse(Console.ReadLine(), out vaccinationNo))
+            {
+                valid = true; // if the vaccination number has exactly 5 digits, set the 'valid' variable to true.
+            }
+
+            return valid; // return the value of 'valid' (true if the vaccination number is valid, false otherwise).
+        }
+        #endregion
     }
 }
